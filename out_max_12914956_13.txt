@@ -1,0 +1,220 @@
+Running file: data/instanciac17.mcgb on node0518
+Running mlp
+Running with file: data/instanciac17.mcgb
+: 1000 1 2 3 4 5 6 7 8 9 10 :=
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 122 rows, 390 columns and 924 nonzeros (Max)
+Model fingerprint: 0x282c16f0
+Model has 333 linear objective coefficients
+Variable types: 18 continuous, 372 integer (372 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 3 rows and 0 columns
+Presolve time: 0.00s
+Presolved: 119 rows, 390 columns, 912 nonzeros
+Variable types: 18 continuous, 372 integer (372 binary)
+
+Root relaxation: objective 6.804450e+02, 104 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  680.44500    0   15          -  680.44500      -     -    0s
+     0     0  680.44500    0    8          -  680.44500      -     -    0s
+     0     0  680.44500    0   31          -  680.44500      -     -    0s
+     0     0  680.44500    0   29          -  680.44500      -     -    0s
+     0     0  680.44500    0   42          -  680.44500      -     -    0s
+     0     0  680.44500    0   33          -  680.44500      -     -    0s
+     0     0  680.44500    0   33          -  680.44500      -     -    0s
+     0     0  680.44500    0   22          -  680.44500      -     -    0s
+     0     0  680.44500    0   20          -  680.44500      -     -    0s
+     0     0  680.44500    0   20          -  680.44500      -     -    0s
+     0     0  680.44500    0   20          -  680.44500      -     -    0s
+     0     0  680.44500    0   20          -  680.44500      -     -    0s
+     0     2  680.44500    0   20          -  680.44500      -     -    0s
+H  351   349                     551.6985000  679.44500  23.2%  12.8    0s
+H  378   349                     630.4595000  679.44500  7.77%  12.6    0s
+*  433   371              19     640.4450000  679.44500  6.09%  12.2    0s
+*  785   428              23     641.4450000  678.70272  5.81%  10.9    0s
+* 1136   488              18     644.4450000  670.94500  4.11%  10.6    0s
+
+Cutting planes:
+  Cover: 14
+  MIR: 6
+  Flow cover: 5
+  Inf proof: 46
+  Zero half: 5
+  RLT: 3
+  Relax-and-lift: 4
+  Lazy constraints: 128
+
+Explored 3004 nodes (29731 simplex iterations) in 0.82 seconds (0.15 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 5: 644.445 641.445 640.445 ... 551.698
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.444450000000e+02, best bound 6.444450000000e+02, gap 0.0000%
+
+User-callback calls 6441, time in user-callback 0.01 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $644.4450
+
+Truck 1:
+  Assigned Grade: 1
+  Total Volume: 21101.000 L
+  Blend SC / ml: 4.526 (Limit: 0.0 < SC <= 5.0)
+  Route: 1000 -> 5 -> 2 -> 9 -> 1000
+
+Truck 2:
+  Assigned Grade: 1
+  Total Volume: 9978.000 L
+  Blend SC / ml: 4.000 (Limit: 0.0 < SC <= 5.0)
+  Route: 1000 -> 3 -> 1000
+
+Truck 3:
+  Assigned Grade: 1
+  Total Volume: 28084.000 L
+  Blend SC / ml: 4.910 (Limit: 0.0 < SC <= 5.0)
+  Route: 1000 -> 4 -> 6 -> 10 -> 8 -> 7 -> 1 -> 1000
+
+Running mlp with containers
+Running with file: data/instanciac17.mcgb
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 197 rows, 477 columns and 1188 nonzeros (Max)
+Model fingerprint: 0xcbc4ce13
+Model has 342 linear objective coefficients
+Variable types: 96 continuous, 381 integer (381 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 16 rows and 10 columns
+Presolve time: 0.01s
+Presolved: 181 rows, 467 columns, 1164 nonzeros
+Variable types: 96 continuous, 371 integer (371 binary)
+
+Root relaxation: objective 6.804450e+02, 175 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  680.44500    0   10          -  680.44500      -     -    0s
+     0     0  680.44500    0   38          -  680.44500      -     -    0s
+     0     0  680.44500    0   42          -  680.44500      -     -    0s
+     0     0  680.44500    0   10          -  680.44500      -     -    0s
+     0     0  680.44500    0   11          -  680.44500      -     -    0s
+     0     0  680.44500    0    6          -  680.44500      -     -    0s
+     0     0  680.44500    0   32          -  680.44500      -     -    0s
+     0     0  680.44500    0   41          -  680.44500      -     -    0s
+     0     0  680.44500    0   15          -  680.44500      -     -    0s
+     0     0  680.44500    0   22          -  680.44500      -     -    0s
+     0     0  680.44500    0   16          -  680.44500      -     -    0s
+     0     0  680.44500    0   25          -  680.44500      -     -    0s
+     0     0  680.44500    0   22          -  680.44500      -     -    0s
+     0     0  680.44500    0    9          -  680.44500      -     -    0s
+     0     0  680.44500    0    9          -  680.44500      -     -    0s
+     0     2  680.44500    0    9          -  680.44500      -     -    0s
+H   42    62                     585.5078750  680.44500  16.2%  21.8    0s
+H  135   148                     593.6360000  680.44500  14.6%  23.6    0s
+H  604   532                     603.9990000  680.44500  12.7%  16.2    0s
+H  619   532                     614.4450000  680.44500  10.7%  15.9    0s
+*  730   611              17     644.4450000  680.36837  5.57%  15.1    0s
+
+Cutting planes:
+  MIR: 12
+  Flow cover: 14
+  Inf proof: 34
+  Zero half: 7
+  Relax-and-lift: 1
+  Lazy constraints: 120
+
+Explored 4537 nodes (58733 simplex iterations) in 1.09 seconds (0.20 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 5: 644.445 614.445 603.999 ... 585.508
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.444450000000e+02, best bound 6.444450000000e+02, gap 0.0000%
+
+User-callback calls 9601, time in user-callback 0.01 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $644.4450
+
+--- Truck 1 ---
+Route: 1000 -> 9 -> 2 -> 6 -> 4 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 15000.000 L (Capacity: 15000.0)
+    Blend SC / ml: 4.239
+      <- 716.00 L from Farm 9 (Original SC: 9)
+      <- 6934.00 L from Farm 2 (Original SC: 4)
+      <- 7350.00 L from Farm 6 (Original SC: 4)
+  [Compartment 2]
+    Assigned Grade: 1
+    Total Volume: 7515.000 L (Capacity: 15000.0)
+    Blend SC / ml: 5.000
+      <- 1503.00 L from Farm 9 (Original SC: 9)
+      <- 4336.00 L from Farm 2 (Original SC: 4)
+      <- 1676.00 L from Farm 4 (Original SC: 4)
+
+--- Truck 2 ---
+Route: 1000 -> 3 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 0.000 L (Capacity: 15000.0)
+    Blend SC / ml: 0.000
+  [Compartment 2]
+    Assigned Grade: 1
+    Total Volume: 9978.000 L (Capacity: 15000.0)
+    Blend SC / ml: 4.000
+      <- 9978.00 L from Farm 3 (Original SC: 4)
+
+--- Truck 3 ---
+Route: 1000 -> 1 -> 7 -> 8 -> 10 -> 5 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 11670.000 L (Capacity: 15000.0)
+    Blend SC / ml: 4.904
+      <- 1070.00 L from Farm 1 (Original SC: 9)
+      <- 8313.00 L from Farm 7 (Original SC: 4)
+      <- 1041.00 L from Farm 8 (Original SC: 9)
+      <- 1246.00 L from Farm 10 (Original SC: 4)
+  [Compartment 2]
+    Assigned Grade: 1
+    Total Volume: 15000.000 L (Capacity: 15000.0)
+    Blend SC / ml: 5.000
+      <- 3000.00 L from Farm 8 (Original SC: 9)
+      <- 4388.00 L from Farm 10 (Original SC: 4)
+      <- 7612.00 L from Farm 5 (Original SC: 4)
+

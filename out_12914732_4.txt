@@ -1,0 +1,183 @@
+Running file: data/instanciac25.mcgb on node0516
+Running mlp
+Running with file: data/instanciac25.mcgb
+: 1000 1 2 3 :=
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 100
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  100
+LazyConstraints  1
+
+Optimize a model with 50 rows, 50 columns and 154 nonzeros (Max)
+Model fingerprint: 0x6d054b55
+Model has 30 linear objective coefficients
+Variable types: 12 continuous, 38 integer (38 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 5 rows and 3 columns
+Presolve time: 0.01s
+Presolved: 45 rows, 47 columns, 140 nonzeros
+Variable types: 12 continuous, 35 integer (35 binary)
+Found heuristic solution: objective -210.4820000
+Found heuristic solution: objective -181.5040000
+
+Root relaxation: objective -1.120555e+02, 29 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -112.05546    0   16 -181.50400 -112.05546  38.3%     -    0s
+     0     0 -112.05546    0   17 -181.50400 -112.05546  38.3%     -    0s
+     0     0 -112.05546    0   17 -181.50400 -112.05546  38.3%     -    0s
+     0     0 -112.05546    0    4 -181.50400 -112.05546  38.3%     -    0s
+     0     0 -112.05546    0   17 -181.50400 -112.05546  38.3%     -    0s
+     0     0 -112.08638    0   17 -181.50400 -112.08638  38.2%     -    0s
+     0     0 -112.45939    0   20 -181.50400 -112.45939  38.0%     -    0s
+     0     0 -113.48575    0   17 -181.50400 -113.48575  37.5%     -    0s
+     0     0 -113.94513    0   20 -181.50400 -113.94513  37.2%     -    0s
+     0     0 -113.94513    0   17 -181.50400 -113.94513  37.2%     -    0s
+     0     0 -113.94513    0   17 -181.50400 -113.94513  37.2%     -    0s
+     0     0 -150.64401    0   23 -181.50400 -150.64401  17.0%     -    0s
+     0     0 -150.64401    0   19 -181.50400 -150.64401  17.0%     -    0s
+     0     2 -150.64401    0   19 -181.50400 -150.64401  17.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  Clique: 3
+  MIR: 3
+  Flow cover: 3
+
+Explored 5 nodes (150 simplex iterations) in 0.08 seconds (0.01 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 2: -181.504 -210.482 
+No other solutions better than -181.504
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.815040000000e+02, best bound -1.815040000000e+02, gap 0.0000%
+
+User-callback calls 273, time in user-callback 0.00 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $-181.5040
+
+Truck 1:
+  Assigned Grade: 1
+  Total Volume: 4884.000 L
+  Blend SC / ml: 4.000 (Limit: 0.0 < SC <= 5.0)
+  Route: 1000 -> 1 -> 1000
+
+Truck 2:
+  Assigned Grade: 2
+  Total Volume: 13832.000 L
+  Blend SC / ml: 9.000 (Limit: 5.0 < SC <= 10.0)
+  Route: 1000 -> 2 -> 3 -> 1000
+
+Running mlp with containers
+Running with file: data/instanciac25.mcgb
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+LazyConstraints  1
+
+Optimize a model with 86 rows, 80 columns and 260 nonzeros (Max)
+Model fingerprint: 0xfe38d18a
+Model has 36 linear objective coefficients
+Variable types: 36 continuous, 44 integer (44 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 7 rows and 3 columns
+Presolve time: 0.00s
+Presolved: 79 rows, 77 columns, 238 nonzeros
+Variable types: 36 continuous, 41 integer (41 binary)
+Found heuristic solution: objective -167.0095000
+
+Root relaxation: objective -1.120555e+02, 54 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -112.05546    0    4 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   19 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   17 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   17 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   15 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   20 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   25 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   22 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   25 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0   19 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0    4 -167.00950 -112.05546  32.9%     -    0s
+     0     0 -112.05546    0    4 -167.00950 -112.05546  32.9%     -    0s
+     0     2 -112.05546    0    4 -167.00950 -112.05546  32.9%     -    0s
+
+Cutting planes:
+  Cover: 1
+  Implied bound: 9
+  Clique: 4
+  MIR: 8
+  StrongCG: 1
+  Flow cover: 13
+  RLT: 1
+  Relax-and-lift: 1
+
+Explored 165 nodes (1148 simplex iterations) in 0.17 seconds (0.02 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 1: -167.01 
+No other solutions better than -167.01
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.670095000000e+02, best bound -1.670095000000e+02, gap 0.0000%
+
+User-callback calls 600, time in user-callback 0.00 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $-167.0095
+
+--- Truck 1 ---
+Route: 1000 -> 3 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 0.000 L (Capacity: 15000.0)
+    Blend SC / ml: 0.000
+  [Compartment 2]
+    Assigned Grade: 2
+    Total Volume: 5719.000 L (Capacity: 15000.0)
+    Blend SC / ml: 9.000
+      <- 5719.00 L from Farm 3 (Original SC: 9)
+
+--- Truck 2 ---
+Route: 1000 -> 2 -> 1 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 6105.000 L (Capacity: 15000.0)
+    Blend SC / ml: 5.000
+      <- 1221.00 L from Farm 2 (Original SC: 9)
+      <- 4884.00 L from Farm 1 (Original SC: 4)
+  [Compartment 2]
+    Assigned Grade: 2
+    Total Volume: 6892.000 L (Capacity: 15000.0)
+    Blend SC / ml: 9.000
+      <- 6892.00 L from Farm 2 (Original SC: 9)
+

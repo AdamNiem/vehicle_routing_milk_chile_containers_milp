@@ -1,0 +1,13 @@
+[workspace]
+channels = ["conda-forge"]
+name = "math4500Project"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.4,<3.15"
+
+[pypi-dependencies]
+gurobipy = ">=13.0.1, <14"

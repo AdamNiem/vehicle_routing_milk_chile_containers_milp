@@ -1,0 +1,69 @@
+Running file: data/instanciac5.mcgb on node0515
+Running mlp
+Running with file: data/instanciac5.mcgb
+: 1000 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 :=
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 100
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  100
+LazyConstraints  1
+
+Optimize a model with 192 rows, 1350 columns and 2934 nonzeros (Max)
+Model fingerprint: 0xa9f8ca10
+Model has 1221 linear objective coefficients
+Variable types: 18 continuous, 1332 integer (1332 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 4e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 3 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 189 rows, 1350 columns, 2922 nonzeros
+Variable types: 18 continuous, 1332 integer (1332 binary)
+
+Root relaxation: objective 7.818849e+02, 197 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  781.88487    0   20          -  781.88487      -     -    0s
+H    0     0                     546.0610000  781.88487  43.2%     -    0s
+     0     0  781.88487    0   33  546.06100  781.88487  43.2%     -    0s
+     0     0  781.83035    0   41  546.06100  781.83035  43.2%     -    0s
+     0     0  779.97650    0   43  546.06100  779.97650  42.8%     -    0s
+     0     0  779.97650    0   44  546.06100  779.97650  42.8%     -    0s
+     0     0  779.97650    0   28  546.06100  779.97650  42.8%     -    0s
+     0     0  779.97650    0   38  546.06100  779.97650  42.8%     -    0s
+     0     0  775.97650    0   56  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   39  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   72  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   30  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   81  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   68  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   68  546.06100  775.97650  42.1%     -    0s
+     0     0  775.97650    0   38  546.06100  775.97650  42.1%     -    0s
+     0     2  775.97650    0   38  546.06100  775.97650  42.1%     -    0s
+H   30    52                     552.0610000  775.97650  40.6%  55.1    0s
+H 5094  3235                     569.8100000  735.24457  29.0%  17.2    2s
+  6225  3932  711.01975   36   66  569.81000  735.24457  29.0%  18.1    5s
+H 6255  3760                     595.7910000  735.24457  23.4%  18.1    5s
+*10255  5250             102     609.3545000  735.24457  20.7%  16.1    6s
+*11399  5429              88     611.2340000  735.24457  20.3%  16.1    6s
+*12422  5273              54     618.4780000  735.24457  18.9%  16.0    6s
+H13039  5133                     626.1730000  735.24457  17.4%  16.0    7s
+ 21037 10758  701.22203   26   71  626.17300  726.10836  16.0%  15.5   10s
+H28887 15983                     627.1730000  720.80744  14.9%  15.1   13s
+ 34190 20223     cutoff   46       627.17300  719.95214  14.8%  15.2   15s
+H39581 22241                     630.3545000  718.03665  13.9%  15.1   16s
+ 49158 28985  640.95089   33   58  630.35450  715.60836  13.5%  15.1   20s
+H58557 33371                     631.3545000  714.08481  13.1%  15.0   23s
+H58711 33142                     631.9825000  713.99470  13.0%  15.0   23s
+ 63750 37229 infeasible   37       631.98250  713.32125  12.9%  15.0   26s

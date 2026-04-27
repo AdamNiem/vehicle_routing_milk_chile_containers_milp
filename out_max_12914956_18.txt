@@ -1,0 +1,242 @@
+Running file: data/instanciac23.mcgb on node0520
+Running mlp
+Running with file: data/instanciac23.mcgb
+: 1000 1 2 3 4 5 6 7 :=
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 70 rows, 146 columns and 370 nonzeros (Max)
+Model fingerprint: 0x994a281b
+Model has 110 linear objective coefficients
+Variable types: 12 continuous, 134 integer (134 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 9e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 9 rows and 7 columns
+Presolve time: 0.01s
+Presolved: 61 rows, 139 columns, 348 nonzeros
+Variable types: 12 continuous, 127 integer (127 binary)
+
+Root relaxation: objective 4.470154e+02, 50 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.01542    0   10          -  447.01542      -     -    0s
+     0     0  426.85329    0   11          -  426.85329      -     -    0s
+     0     0  391.59974    0   30          -  391.59974      -     -    0s
+     0     0  367.01133    0   33          -  367.01133      -     -    0s
+     0     0  367.01133    0   34          -  367.01133      -     -    0s
+     0     0  358.16130    0   25          -  358.16130      -     -    0s
+     0     0  358.16130    0   25          -  358.16130      -     -    0s
+     0     0  358.16130    0   25          -  358.16130      -     -    0s
+H    0     0                     298.8725000  358.16130  19.8%     -    0s
+     0     0  358.16130    0   23  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   23  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   23  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   27  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   22  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   22  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   30  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   29  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   24  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   24  298.87250  358.16130  19.8%     -    0s
+     0     0  358.16130    0   24  298.87250  358.16130  19.8%     -    0s
+     0     2  357.66130    0   23  298.87250  357.66130  19.7%     -    0s
+*   13     6               4     299.8725000  322.03665  7.39%  10.5    0s
+
+Cutting planes:
+  MIR: 10
+  Flow cover: 7
+  GUB cover: 1
+  Zero half: 1
+  Relax-and-lift: 2
+  Lazy constraints: 10
+
+Explored 36 nodes (596 simplex iterations) in 0.14 seconds (0.02 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 2: 299.873 298.873 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.998725000000e+02, best bound 2.998725000000e+02, gap 0.0000%
+
+User-callback calls 361, time in user-callback 0.00 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $299.8725
+
+Truck 1:
+  Assigned Grade: 1
+  Total Volume: 27297.000 L
+  Blend SC / ml: 4.000 (Limit: 0.0 < SC <= 5.0)
+  Route: 1000 -> 2 -> 7 -> 6 -> 3 -> 1000
+
+Truck 2:
+  Assigned Grade: 2
+  Total Volume: 24135.000 L
+  Blend SC / ml: 9.000 (Limit: 5.0 < SC <= 10.0)
+  Route: 1000 -> 4 -> 5 -> 1 -> 1000
+
+Running mlp with containers
+Running with file: data/instanciac23.mcgb
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 114 rows, 192 columns and 516 nonzeros (Max)
+Model fingerprint: 0x4535ef8b
+Model has 116 linear objective coefficients
+Variable types: 52 continuous, 140 integer (140 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 9e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 11 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 103 rows, 185 columns, 486 nonzeros
+Variable types: 52 continuous, 133 integer (133 binary)
+
+Root relaxation: objective 4.470154e+02, 105 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  447.01542    0   16          -  447.01542      -     -    0s
+     0     0  438.72613    0   34          -  438.72613      -     -    0s
+     0     0  432.06423    0   32          -  432.06423      -     -    0s
+     0     0  432.06423    0   33          -  432.06423      -     -    0s
+     0     0  432.06423    0   31          -  432.06423      -     -    0s
+     0     0  432.06423    0   18          -  432.06423      -     -    0s
+     0     0  432.06423    0   29          -  432.06423      -     -    0s
+     0     0  432.06423    0   16          -  432.06423      -     -    0s
+     0     0  431.59942    0   33          -  431.59942      -     -    0s
+     0     0  431.07879    0   34          -  431.07879      -     -    0s
+     0     0  431.07879    0   34          -  431.07879      -     -    0s
+     0     0  428.06228    0   34          -  428.06228      -     -    0s
+     0     0  428.06228    0   34          -  428.06228      -     -    0s
+     0     0  427.43502    0   35          -  427.43502      -     -    0s
+     0     0  427.43502    0   35          -  427.43502      -     -    0s
+     0     0  423.56959    0   35          -  423.56959      -     -    0s
+     0     0  423.54179    0   35          -  423.54179      -     -    0s
+     0     0  423.53812    0   35          -  423.53812      -     -    0s
+     0     0  423.53726    0   35          -  423.53726      -     -    0s
+     0     0  423.11662    0   38          -  423.11662      -     -    0s
+     0     0  423.06017    0   39          -  423.06017      -     -    0s
+     0     0  423.05958    0   39          -  423.05958      -     -    0s
+     0     0  422.42204    0   37          -  422.42204      -     -    0s
+     0     0  422.03275    0   39          -  422.03275      -     -    0s
+     0     0  421.87770    0   39          -  421.87770      -     -    0s
+     0     0  421.87385    0   40          -  421.87385      -     -    0s
+     0     0  420.27282    0   38          -  420.27282      -     -    0s
+     0     0  419.72223    0   39          -  419.72223      -     -    0s
+     0     0  419.72223    0   40          -  419.72223      -     -    0s
+     0     0  419.72223    0   37          -  419.72223      -     -    0s
+     0     0  419.72223    0   40          -  419.72223      -     -    0s
+     0     0  419.48757    0   35          -  419.48757      -     -    0s
+     0     0  418.50607    0   40          -  418.50607      -     -    0s
+     0     0  418.47265    0   40          -  418.47265      -     -    0s
+     0     0  418.46926    0   40          -  418.46926      -     -    0s
+     0     0  418.17963    0   34          -  418.17963      -     -    0s
+     0     0  418.04170    0   37          -  418.04170      -     -    0s
+     0     0  418.04170    0   37          -  418.04170      -     -    0s
+     0     0  417.97793    0   37          -  417.97793      -     -    0s
+     0     0  417.84444    0   40          -  417.84444      -     -    0s
+     0     0  417.78983    0   41          -  417.78983      -     -    0s
+     0     0  417.76943    0   41          -  417.76943      -     -    0s
+     0     0  414.79303    0   40          -  414.79303      -     -    0s
+     0     0  414.63282    0   40          -  414.63282      -     -    0s
+     0     0  414.61769    0   37          -  414.61769      -     -    0s
+     0     0  414.61769    0   37          -  414.61769      -     -    0s
+     0     0  414.57832    0   31          -  414.57832      -     -    0s
+     0     0  414.54014    0   37          -  414.54014      -     -    0s
+     0     0  414.51993    0   40          -  414.51993      -     -    0s
+     0     0  414.34611    0   37          -  414.34611      -     -    0s
+     0     0  414.28814    0   37          -  414.28814      -     -    0s
+     0     0  414.28079    0   37          -  414.28079      -     -    0s
+     0     0  413.99231    0   34          -  413.99231      -     -    0s
+     0     0  413.62919    0   36          -  413.62919      -     -    0s
+     0     0  412.52753    0   20          -  412.52753      -     -    0s
+     0     0  412.49860    0   33          -  412.49860      -     -    0s
+     0     0  412.48557    0   31          -  412.48557      -     -    0s
+     0     0  412.48557    0   31          -  412.48557      -     -    0s
+     0     0  412.48557    0   31          -  412.48557      -     -    0s
+     0     0  412.48557    0   31          -  412.48557      -     -    0s
+     0     2  412.47033    0   31          -  412.47033      -     -    0s
+H  315   283                     273.4830000  395.21833  44.5%  13.7    0s
+H  375   280                     299.8725000  395.21833  31.8%  13.3    0s
+
+Cutting planes:
+  Implied bound: 4
+  MIR: 17
+  Flow cover: 45
+  Zero half: 3
+  Relax-and-lift: 3
+  Lazy constraints: 17
+
+Explored 1061 nodes (12393 simplex iterations) in 0.47 seconds (0.09 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 2: 299.873 273.483 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.998725000000e+02, best bound 2.998725000000e+02, gap 0.0000%
+
+User-callback calls 2652, time in user-callback 0.00 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $299.8725
+
+--- Truck 1 ---
+Route: 1000 -> 5 -> 4 -> 1 -> 1000
+  [Compartment 1]
+    Assigned Grade: 2
+    Total Volume: 15000.000 L (Capacity: 15000.0)
+    Blend SC / ml: 9.000
+      <- 6379.00 L from Farm 5 (Original SC: 9)
+      <- 8621.00 L from Farm 1 (Original SC: 9)
+  [Compartment 2]
+    Assigned Grade: 2
+    Total Volume: 9135.000 L (Capacity: 15000.0)
+    Blend SC / ml: 9.000
+      <- 1337.00 L from Farm 5 (Original SC: 9)
+      <- 7798.00 L from Farm 4 (Original SC: 9)
+
+--- Truck 2 ---
+Route: 1000 -> 3 -> 7 -> 6 -> 2 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 12297.000 L (Capacity: 15000.0)
+    Blend SC / ml: 4.000
+      <- 12297.00 L from Farm 6 (Original SC: 4)
+  [Compartment 2]
+    Assigned Grade: 1
+    Total Volume: 15000.000 L (Capacity: 15000.0)
+    Blend SC / ml: 4.000
+      <- 2145.00 L from Farm 3 (Original SC: 4)
+      <- 7415.00 L from Farm 7 (Original SC: 4)
+      <- 3054.00 L from Farm 6 (Original SC: 4)
+      <- 2386.00 L from Farm 2 (Original SC: 4)
+

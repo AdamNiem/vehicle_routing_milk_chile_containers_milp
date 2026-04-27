@@ -1,0 +1,185 @@
+Running file: data/instanciac7.mcgb on node0516
+Running mlp
+Running with file: data/instanciac7.mcgb
+: 1000 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 :=
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 102 rows, 850 columns and 1802 nonzeros (Max)
+Model fingerprint: 0x50a08c54
+Model has 745 linear objective coefficients
+Variable types: 6 continuous, 844 integer (844 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 44 rows and 37 columns
+Presolve time: 0.01s
+Presolved: 58 rows, 813 columns, 1624 nonzeros
+Variable types: 0 continuous, 813 integer (813 binary)
+
+Root relaxation: objective 9.787700e+01, 65 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   97.87700    0    -          -   97.87700      -     -    0s
+     0     0   93.87700    0    8          -   93.87700      -     -    0s
+H    0     0                      52.8770000   93.87700  77.5%     -    0s
+H    0     0                      57.8770000   93.87700  62.2%     -    0s
+     0     0   67.87700    0    -   57.87700   67.87700  17.3%     -    0s
+     0     0   66.87700    0   35   57.87700   66.87700  15.6%     -    0s
+     0     0   66.87700    0   35   57.87700   66.87700  15.6%     -    0s
+     0     0   66.87700    0    -   57.87700   66.87700  15.6%     -    0s
+     0     0   66.87700    0   15   57.87700   66.87700  15.6%     -    0s
+*    0     0               0      65.8770000   65.87700  0.00%     -    0s
+
+Cutting planes:
+  Lazy constraints: 67
+
+Explored 1 nodes (299 simplex iterations) in 0.05 seconds (0.04 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 3: 65.877 57.877 52.877 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.587700000000e+01, best bound 6.587700000000e+01, gap 0.0000%
+
+User-callback calls 297, time in user-callback 0.01 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $65.8770
+
+Truck 1:
+  Assigned Grade: 2
+  Total Volume: 20274.000 L
+  Blend SC / ml: 6.946 (Limit: 5.0 < SC <= 10.0)
+  Route: 1000 -> 28 -> 20 -> 19 -> 27 -> 13 -> 26 -> 14 -> 23 -> 18 -> 17 -> 2 -> 24 -> 22 -> 15 -> 16 -> 25 -> 3 -> 1 -> 21 -> 12 -> 8 -> 10 -> 5 -> 6 -> 9 -> 11 -> 4 -> 7 -> 1000
+
+Running mlp with containers
+Running with file: data/instanciac7.mcgb
+Set parameter TokenServer to value "license8.clemson.edu"
+Set parameter TimeLimit to value 1200
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 13.0.1 build v13.0.1rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: AMD EPYC 9654 96-Core Processor, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 192 physical cores, 192 logical processors, using up to 32 threads
+
+Non-default parameters:
+TimeLimit  1200
+LazyConstraints  1
+
+Optimize a model with 145 rows, 915 columns and 1980 nonzeros (Max)
+Model fingerprint: 0x8b2f322c
+Model has 748 linear objective coefficients
+Variable types: 68 continuous, 847 integer (847 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+06]
+  Objective range  [4e-03, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 9e+06]
+
+Presolve removed 58 rows and 56 columns
+Presolve time: 0.00s
+Presolved: 87 rows, 859 columns, 1804 nonzeros
+Variable types: 40 continuous, 819 integer (819 binary)
+
+Root relaxation: objective 1.927060e+02, 67 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  192.70595    0    4          -  192.70595      -     -    0s
+     0     0  187.70595    0    4          -  187.70595      -     -    0s
+     0     0  170.02294    0    4          -  170.02294      -     -    0s
+     0     0  165.02294    0   12          -  165.02294      -     -    0s
+     0     0  155.67874    0    5          -  155.67874      -     -    0s
+H    0     0                      42.5486250  155.67874   266%     -    0s
+     0     0  137.67874    0   14   42.54862  137.67874   224%     -    0s
+     0     0  137.67874    0   15   42.54862  137.67874   224%     -    0s
+     0     0  137.42035    0   16   42.54862  137.42035   223%     -    0s
+     0     0  136.13188    0   22   42.54862  136.13188   220%     -    0s
+     0     0  136.13188    0   22   42.54862  136.13188   220%     -    0s
+     0     0  129.13188    0   25   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   24   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   26   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   26   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   26   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   26   42.54862  129.13188   203%     -    0s
+     0     0  129.13188    0   13   42.54862  129.13188   203%     -    0s
+     0     2  129.13188    0    5   42.54862  129.13188   203%     -    0s
+H   33    16                      75.5486250  121.60770  61.0%  18.3    0s
+*   38    16               3     119.6077000  121.60770  1.67%  17.3    0s
+*   55     2               5     121.6077000  121.60770  0.00%  13.8    0s
+
+Cutting planes:
+  MIR: 1
+  Flow cover: 4
+  Lazy constraints: 82
+
+Explored 63 nodes (1478 simplex iterations) in 0.32 seconds (0.07 work units)
+Thread count was 32 (of 192 available processors)
+
+Solution count 4: 121.608 119.608 75.5486 42.5486 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.216077000000e+02, best bound 1.216077000000e+02, gap 0.0000%
+
+User-callback calls 459, time in user-callback 0.01 sec
+
+--- OPTIMAL SOLUTION FOUND ---
+Total Profit: $121.6077
+
+--- Truck 1 ---
+Route: 1000 -> 4 -> 7 -> 5 -> 9 -> 11 -> 10 -> 6 -> 8 -> 12 -> 1 -> 21 -> 3 -> 25 -> 16 -> 15 -> 22 -> 17 -> 23 -> 14 -> 18 -> 2 -> 24 -> 13 -> 26 -> 27 -> 19 -> 20 -> 28 -> 1000
+  [Compartment 1]
+    Assigned Grade: 1
+    Total Volume: 12384.600 L (Capacity: 15000.0)
+    Blend SC / ml: 5.000
+      <- 1091.00 L from Farm 7 (Original SC: 9)
+      <- 789.00 L from Farm 5 (Original SC: 4)
+      <- 1728.00 L from Farm 11 (Original SC: 4)
+      <- 1371.00 L from Farm 10 (Original SC: 4)
+      <- 151.00 L from Farm 6 (Original SC: 4)
+      <- 253.00 L from Farm 8 (Original SC: 4)
+      <- 790.00 L from Farm 16 (Original SC: 4)
+      <- 2767.00 L from Farm 17 (Original SC: 4)
+      <- 774.00 L from Farm 23 (Original SC: 4)
+      <- 1002.00 L from Farm 14 (Original SC: 4)
+      <- 1275.00 L from Farm 27 (Original SC: 9)
+      <- 110.92 L from Farm 19 (Original SC: 9)
+      <- 282.68 L from Farm 28 (Original SC: 4)
+  [Compartment 2]
+    Assigned Grade: 2
+    Total Volume: 7889.400 L (Capacity: 15000.0)
+    Blend SC / ml: 10.000
+      <- 790.00 L from Farm 4 (Original SC: 9)
+      <- 249.00 L from Farm 9 (Original SC: 9)
+      <- 345.00 L from Farm 12 (Original SC: 9)
+      <- 998.00 L from Farm 1 (Original SC: 15)
+      <- 398.00 L from Farm 21 (Original SC: 15)
+      <- 574.00 L from Farm 3 (Original SC: 9)
+      <- 575.00 L from Farm 25 (Original SC: 9)
+      <- 194.00 L from Farm 15 (Original SC: 9)
+      <- 216.00 L from Farm 22 (Original SC: 9)
+      <- 1015.00 L from Farm 18 (Original SC: 9)
+      <- 332.00 L from Farm 2 (Original SC: 9)
+      <- 565.00 L from Farm 24 (Original SC: 9)
+      <- 103.00 L from Farm 13 (Original SC: 9)
+      <- 393.00 L from Farm 26 (Original SC: 9)
+      <- 268.08 L from Farm 19 (Original SC: 9)
+      <- 777.00 L from Farm 20 (Original SC: 9)
+      <- 97.32 L from Farm 28 (Original SC: 4)
+
